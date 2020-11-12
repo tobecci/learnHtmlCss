@@ -1,0 +1,144 @@
+@font-face{
+    font-family: 'pop';
+    src: url('Poppins-Regular.ttf');
+}
+
+.outer-div{
+    /* background-color: red; */
+    padding: 20px;
+    width: 85%;
+    margin: auto;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'pop';
+}
+
+.inner-div-one{
+    background-image: linear-gradient( to right, rgb(135, 13, 184), rgb(183, 65, 230));
+    color: white;
+    padding: 50px;
+    margin: 10px;
+    width: 35%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 0;
+    box-shadow: gray 0px 0px 10px;
+}
+
+.inner-div-one>h1{
+    font-size: 70px;
+}
+
+.inner-div-one>h2{
+    font-size: 30px;
+}
+
+.inner-div-two>p{
+    font-size: 20px;
+}
+
+.inner-div-two{
+    background-color: white;
+    color: rgb(135, 13, 184);
+    padding: 50px;
+    margin: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 0;
+    width: 35%;
+    box-shadow: gray 0px 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+@media(max-width:600px){
+
+    .outer-div{
+        padding: 10px;
+    }
+
+.inner-div-one{
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.inner-div-two{
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0px;
+}
+
+.inner-div-one > h1{
+    font-size: 30px;
+}
+
+.inner-div-one > h2{
+    font-size: 18px;
+}
+
+.inner-div-two > p{
+    font-size: 14px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media(max-width: 700px){
+    .inner-div-one, .inner-div-two{
+        width: auto;
+border-radius: 5px;
+
+    }
+
+    .inner-div-two{
+        margin-left: 10px;
+        padding: 20px;
+    }
+
+    .inner-div-one{
+        margin-right: 5px;
+        padding: 20px;
+    }
+
+    .inner-div-one>h1 {
+        font-size: 40px;
+    }
+
+    .inner-div-one>h2 {
+        font-size: 19px;
+    }
+
+    .inner-div-two>p{
+        font-size: 14px;
+    }
+} */

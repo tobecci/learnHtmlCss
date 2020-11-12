@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing flexbox</title>
+</head>
+<body>
+
+    <style>
+        .main{
+            background-color: blueviolet;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* display: none;    */
+        }
+
+        .one, .two{
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+        }
+
+        .one{
+            background-color: blue;
+        }
+
+        .two{
+            background-color: red;
+        }
+
+        .box{
+            background-color: aqua;
+            /* width: 30px; */
+            /* height: 500px; */
+        }
+
+        .wrapper{
+            background-color: gray;
+            display: grid;
+            grid-template-columns: 100px 10px 100px 10px 100px;
+            grid-template-rows: auto 10px auto;
+            height: 200px;
+            padding: 5px;
+        }
+
+        .a{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .b{
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+
+        .c{
+            grid-column: 5/6;
+            grid-row: 1/2;
+        }
+
+        .d{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        .e{
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+
+        .f{
+            grid-column: 5/5;
+            grid-row: 3/4;
+        }
+
+
+    </style>
+
+    <div class="main">
+
+        <div class="one">
+            
+        </div>
+
+        <div class="two">
+
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="box a">
+            A
+        </div>
+
+        <div class="box b">
+            B
+        </div>
+
+        <div class="box c">
+            C
+        </div>
+
+        <div class="box d">
+          D  
+        </div>
+
+        <div class="box e">
+          E  
+        </div>
+
+        <div class="box f">
+          F  
+        </div>
+    </div>
+    
+</body>
+</html>
