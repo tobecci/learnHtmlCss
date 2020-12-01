@@ -1,121 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing flexbox</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-    <style>
-        .main{
-            background-color: blueviolet;
-            padding: 5px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            /* display: none;    */
-        }
-
-        .one, .two{
-            width: 300px;
-            height: 300px;
-            margin: 5px;
-        }
-
-        .one{
-            background-color: blue;
-        }
-
-        .two{
-            background-color: red;
-        }
-
-        .box{
-            background-color: aqua;
-            /* width: 30px; */
-            /* height: 500px; */
-        }
-
-        .wrapper{
-            background-color: gray;
-            display: grid;
-            grid-template-columns: 100px 10px 100px 10px 100px;
-            grid-template-rows: auto 10px auto;
-            height: 200px;
-            padding: 5px;
-        }
-
-        .a{
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-
-        .b{
-            grid-column: 3/4;
-            grid-row: 1/2;
-        }
-
-        .c{
-            grid-column: 5/6;
-            grid-row: 1/2;
-        }
-
-        .d{
-            grid-column: 1/2;
-            grid-row: 3/4;
-        }
-
-        .e{
-            grid-column: 3/4;
-            grid-row: 3/4;
-        }
-
-        .f{
-            grid-column: 5/5;
-            grid-row: 3/4;
-        }
-
-
-    </style>
-
     <div class="main">
+        <div class="left">
+            <div class="one">
+                <span>a</span>
+                <span>a</span>
+            </div>
 
-        <div class="one">
-            
+            <div class="two">
+
+                <div>
+                    <span>We are</span>
+                    <span>Aroma</span>
+                </div>
+
+                <div>
+                    <p>Welcome back, Please login</p>
+                    <p>to your account</p>
+                </div>
+            </div>
+
+            <div class="three">
+
+                <form action="">
+                    <div class="form">
+                        <div class="form-input left-border">
+                            <p class="form-label">Email Address</p>
+                            <input class="form-text" autocomplete="email" placeholder="Email address" type="email" name="" id="">
+                        </div>
+                        <div class="form-input">
+                            <p class="form-label">Password</p>
+                            <input class="form-text" autocomplete="current-password" placeholder="password" type="password" name="">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="line2 flex flex-row jsb ac">
+
+                    <div class="checkbox">
+                        <input type="checkbox" name="">
+                        <span class="remember">Remember me</span>
+                    </div>
+
+                    <div>
+                        <p>Forgot Password</p>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button class="btn-black">
+                        Login
+                    </button>
+
+                    <button class="btn-white">
+                        Sign up
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div class="four">
+                <p class="terms1">By signing up, you agree to aroma's</p>
+                <p class="terms2">Terms and conditions <span class="and">&</span> privacy policy</p>
+            </div>
         </div>
 
-        <div class="two">
+        <div class="right">
+            <div class="top">
+                <span>ABOUT US</span>
+                <span>SHOWCASE</span>
+                <span>LETTERS</span>
+                <span>CONTACT</span>
+                <span>BLOG</span>
+            </div>
 
+            <div class="middle">
+                <p>
+                    a
+                </p>
+            </div>
+
+
+            <div class="bottom">
+                <div>
+                    <button id="previous-btn">
+                        PREVIOUS
+                    </button>
+
+                    <button id="next-btn">
+                        NEXT
+                    </button>
+                </div>
+            </div>
         </div>
-
     </div>
 
-    <div class="wrapper">
-        <div class="box a">
-            A
-        </div>
-
-        <div class="box b">
-            B
-        </div>
-
-        <div class="box c">
-            C
-        </div>
-
-        <div class="box d">
-          D  
-        </div>
-
-        <div class="box e">
-          E  
-        </div>
-
-        <div class="box f">
-          F  
-        </div>
-    </div>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>

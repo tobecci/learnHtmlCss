@@ -1,144 +1,284 @@
-@font-face{
+@font-face {
     font-family: 'pop';
     src: url('Poppins-Regular.ttf');
 }
 
-.outer-div{
-    /* background-color: red; */
-    padding: 20px;
-    width: 85%;
-    margin: auto;
-    margin-top: 8%;
+.main {
+    /* background-color: black; */
+    height: 700px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: 'pop';
+    box-shadow: gray 0px 0px 50px;
 }
 
-.inner-div-one{
-    background-image: linear-gradient( to right, rgb(135, 13, 184), rgb(183, 65, 230));
-    color: white;
-    padding: 50px;
-    margin: 10px;
-    width: 35%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    margin-right: 0;
-    box-shadow: gray 0px 0px 10px;
+.left,
+.right {
+    width: 50vw;
+    height: 100%;
+    /* box-shadow: gray 0px 0px 50px; */
 }
 
-.inner-div-one>h1{
-    font-size: 70px;
-}
-
-.inner-div-one>h2{
-    font-size: 30px;
-}
-
-.inner-div-two>p{
-    font-size: 20px;
-}
-
-.inner-div-two{
+.left {
     background-color: white;
-    color: rgb(135, 13, 184);
-    padding: 50px;
-    margin: 10px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-left: 0;
-    width: 35%;
-    box-shadow: gray 0px 0px 10px;
+}
+
+div.one {}
+
+div.one span {}
+
+#mirror-text {
+    transform: rotateY(180deg);
+    color: white;
+}
+
+.two {}
+
+.three {}
+
+.four {}
+
+.right {
+    /* background-color: blue; */
+    background-image: url('leaves.jpg');
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top,
+.middle,
+.bottom {
+    background-color: transparent;
+    height: 12%;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: 'pop';
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.middle {
+    background-color: #ffffff82;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 290px;
+    font-family: 'pop';
+    font-weight: 900;
+}
+
+.middle p {
+    position: relative;
+    top: -20px;
+}
+
+.bottom div {
+    width: 50%;
+    max-height: 100%;
+    /* pa-top: 10%; */
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom div div {
+    width: 50px;
+    height: 20px;
+    margin: 10px;
+    display: inline;
+    background-color: blue;
+}
+
+.bottom {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
+#previous-btn {}
 
-@media(max-width:600px){
-
-    .outer-div{
-        padding: 10px;
-    }
-
-.inner-div-one{
-    width: 100%;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 0px;
-    margin-bottom: 10px;
+#previous-btn,
+#next-btn {
+    margin: 5px;
+    background-color: transparent;
+    color: white;
+    border-color: #ffffff82;
+    border-width: 1px;
+    border-radius: 2px;
+    padding: 6px;
+    font-weight: 500;
 }
 
-.inner-div-two{
-    width: 100%;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 0px;
+#next-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff4f;
 }
 
-.inner-div-one > h1{
-    font-size: 30px;
+.left>div {
+    background-color: red;
+    width: 90%;
+    min-height: 100px;
+    margin: 10px;
+    background-color: #fff;
 }
 
-.inner-div-one > h2{
-    font-size: 18px;
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #555; */
 }
 
-.inner-div-two > p{
+.one>span {
+    font-size: 35px;
+    font-weight: 600;
+    color: #747474;
+}
+
+.one>:nth-child(2) {
+    transform: scaleX(-1);
+    display: inline-block;
+    margin-left: -8px;
+}
+
+.two>div>span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.two>div>:nth-child(1) {
+    color: #b3b3b3;
+}
+
+.two> :nth-child(2)>p {
+    color: #b3b3b3;
+    line-height: 2px;
+}
+
+.two> :nth-child(2) {
+    margin-top: 20px;
+}
+
+.form-input {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eaeaea;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 2px;
+    /* margin: 5px; */
+}
+
+.left-border {
+    border-left-color: #ff185a;
+}
+
+.form-text {
+    height: 30px;
+    margin-top: -15px;
+    font-weight: 100;
+    border: none;
+    outline: none;
+}
+
+.form-label {
+    color: #b3b3b3;
+}
+
+.form-text,
+.form-label {
+    font-size: 16px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.jc {
+    justify-content: center;
+}
+
+.jsb {
+    justify-content: space-between;
+}
+
+.ac {
+    align-items: center;
+}
+
+.remember {
+    color: #787878;
+}
+
+.line2 {
+    margin-top: 20px;
+}
+
+.btn-black {
+    background-color: #000000;
+    border: #000000 solid 2px;
+    color: #fff;
+}
+
+.btn-white {
+    border: #bababa solid 2px;
+    color: #787878;
+    background-color: white;
+    margin-left: 12px;
+}
+
+.button>button {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.terms1 {
+    color: #9d9d9d;
+}
+
+.and {
+    color: #9d9d9d;
+}
+
+.terms1,
+.terms2 {
+    line-height: 2px;
+    font-weight: 600;
     font-size: 14px;
 }
 
+.form {
+    /* background-color: red; */
+    box-shadow: #555 0px 30px 50px -50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media(max-width: 700px){
-    .inner-div-one, .inner-div-two{
-        width: auto;
-border-radius: 5px;
-
-    }
-
-    .inner-div-two{
-        margin-left: 10px;
-        padding: 20px;
-    }
-
-    .inner-div-one{
-        margin-right: 5px;
-        padding: 20px;
-    }
-
-    .inner-div-one>h1 {
-        font-size: 40px;
-    }
-
-    .inner-div-one>h2 {
-        font-size: 19px;
-    }
-
-    .inner-div-two>p{
-        font-size: 14px;
-    }
-} */
