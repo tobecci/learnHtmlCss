@@ -1,33 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test page</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="main">
+        <div class="left">
+            <div class="one">
+                <span>a</span>
+                <span>a</span>
+            </div>
 
-    <div class="outer-div">
+            <div class="two">
 
-        <div class="inner-div-one">
-            <h1>
-                Hello World,
-            </h1>
-            <h2>
-                Welcome To my wonderful website
-            </h2>
+                <div>
+                    <span>We are</span>
+                    <span>Aroma</span>
+                </div>
+
+                <div>
+                    <p>Welcome back, Please login</p>
+                    <p>to your account</p>
+                </div>
+            </div>
+
+            <div class="three">
+
+                <form id="login-form">
+                    <div class="form">
+                        <div class="form-input left-border">
+                            <p class="form-label">Email Address</p>
+                            <input class="form-text" id="email" autocomplete="email" placeholder="Email address" type="email" name="" id="">
+                        </div>
+                        <div class="form-input">
+                            <p class="form-label">Password</p>
+                            <input id="password" class="form-text" autocomplete="current-password" placeholder="password" type="password" name="">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="line2 flex flex-row jsb ac">
+
+                    <div class="checkbox">
+                        <input type="checkbox" name="">
+                        <span class="remember">Remember me</span>
+                    </div>
+
+                    <div>
+                        <p>Forgot Password</p>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button class="btn-black" id="login-btn">
+                        Login
+                    </button>
+
+                    <button class="btn-white">
+                        Sign up
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div class="four">
+                <p class="terms1">By signing up, you agree to aroma's</p>
+                <p class="terms2">Terms and conditions <span class="and">&</span> privacy policy</p>
+            </div>
         </div>
 
-        <div class="inner-div-two">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum inventore dolor, blanditiis, esse aliquam optio eius odio eligendi rerum consequuntur culpa sit omnis repudiandae ducimus praesentium consequatur hic minima alias?
-            </p>
-            
-        </div>
+        <div class="right">
+            <div class="top">
+                <span>ABOUT US</span>
+                <span>SHOWCASE</span>
+                <span>LETTERS</span>
+                <span>CONTACT</span>
+                <span>BLOG</span>
+            </div>
 
+            <div class="middle">
+                <p>
+                    a
+                </p>
+            </div>
+
+
+            <div class="bottom">
+                <div>
+                    <button id="previous-btn">
+                        PREVIOUS
+                    </button>
+
+                    <button id="next-btn">
+                        NEXT
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
+
 </html>
